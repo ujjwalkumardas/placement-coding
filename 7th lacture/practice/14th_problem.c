@@ -4,7 +4,7 @@ CONSTRAINTS:-N<=65535
 INPUT FORMAT :- an integer ,N
 OUTPUT FORMAT:- hexa decima value
 SAMPLE INPUT :- 120
-SAMPLE OUTPUT:- 78*/
+SAMPLE OUTPUT:- 78 */
 
 #include <stdio.h>
 int main()
@@ -24,7 +24,7 @@ int main()
     }
     for (int j = i - 1; j >= 0; j--)
     {
-        if (stor[j]>=10)
+        if (stor[j] >= 10)
         {
             if (stor[j] == 10)
             {
@@ -49,9 +49,9 @@ int main()
             if (stor[j] == 15)
             {
                 printf("F");
-            }}
-            else
-                printf("%d", stor[j]);
-        
+            }
+        }
+        else
+            printf("%d", stor[j]);
     }
 }
