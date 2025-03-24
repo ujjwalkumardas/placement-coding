@@ -6,8 +6,8 @@ SAMPLE INPUT :- 5
 SAMPLE OUTPUT:- 2.283334 */
 #include<stdio.h>
 int main(){
-    double n;
-    scanf("%lf",&n);
+    int n;
+    scanf("%d",&n);
     double sum=0.0;
     for(int i=1;i<=n;i++){
 sum=sum+(1.0/i);
