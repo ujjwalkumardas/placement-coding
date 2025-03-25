@@ -6,9 +6,23 @@ CONSTRAINTS:- n<10^9 and k<10^3
 INPUT FORMAT :- integer
 OUTPUT FORMAT:-result sum of the series
 SAMPLE INPUT :- N=15,K=5
-SAMPLE OUTPUT:- 15 10 5 0 5 10 15 
+SAMPLE OUTPUT:- 15 10 5 0 5 10 15
 -----------------------------------------*/
-#include<stdio.h>
-int main(){
-  
+#include <stdio.h>
+int main()
+{
+    int n, k;
+    printf("enter the value of n value = ");
+    scanf("%d", &n);
+    printf("enter the value of k = ");
+    scanf("%d", &k);
+    for (int i = n; i >= (-n); i = i - k)
+    {
+        if(i<0){
+            printf(", %d",-(i));
+        }
+        else{
+            printf(", %d",i);
+        }
+    }
 }
